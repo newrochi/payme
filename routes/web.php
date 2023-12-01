@@ -18,4 +18,6 @@ Route::get('/privacy', 'PageController@privacy')->name('page.privacy');
 
 Auth::routes(['verify' => true]);
 
+Route::view('/verifyem','auth.verify');
+
 Route::get('/home', 'HomeController@index')->name('home');
